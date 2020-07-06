@@ -1,0 +1,514 @@
+body.mainTheme {
+	background-color: #222D36;
+	background-image: none;
+	background-size: cover !important;
+	}
+body.subTheme {
+	background-color: #222D36;
+	}
+nav.top {
+	background-image: linear-gradient(to bottom,#101D24 2%, rgba(16, 29, 36, 0.5) 99%);
+	background-color: #101D24;
+	}
+nav.top > button {
+	border: 1px solid #CDCFD1;
+	}
+div.greetings {
+	background-image: url('../img/Night/night4.png');
+	}
+div.menuContent ul li {
+	border-bottom: 2px solid #222D36;
+	}
+div.menuContent ul li span {
+	background-color: rgba(16, 29, 36, 0.5);
+	border-width: 1px;
+	border-style: solid;
+	}
+div.messageBox {
+	border-top: 2px solid #ECECEC;
+	}
+span.message.error {
+	color: red;
+	text-shadow: 1px 1px 1px #FFCEBE;
+	}
+span.message.success {
+	color: #3369FF;
+	text-shadow: 1px 1px 1px #FFF;
+	}
+aside.sidebar {
+	background-color: #101D24;
+	}
+div.dashboardHeading {
+	background-color: #384853;
+	}
+.userImageIcon {
+	color: #BBBBBB;
+	}
+input.userDataField {
+	border-bottom: 1px solid #CCC;
+	}
+.userEnqueryIcon {
+	color: rgba(255,255,255,0.5);
+	}
+div.userInfo button {
+	border: 1px solid #00A061;
+	color: #00A061;
+	background-color: #CDCFD1;
+	}
+div.userInfo button:active {
+	border-color: #01B66E;
+	}
+hr.userDataEndLine {
+	border-color: #585858;
+	}
+span.userStarredCount {
+	border-radius: 25px;
+	}
+section.phrase-box {
+	border: 1px solid #585858;
+	border-top: 1px solid #585858;
+	}
+div.circle {
+	border: 0.013em dotted #264F97;
+	background-color: #264F97;
+	}
+div.thePhrase {
+	color: #A9A18C;
+	}
+hr.phraseEndLine {
+	border: 0.4px solid #DADADA;
+	}
+div.getAnotherPhrase {
+	color: #ECECEC;
+	box-shadow: 0px 1px 2px 1px #585858;
+	background-color: #7DAD41;
+	}
+div.active {
+	background-color: #6C9537;
+	}
+div.mySpiritualLifeHeader {
+	box-shadow: 2px 2px 0.3px 0.3px #585858;
+	}
+h3.mySpiritualLifeHeading {
+	color: #CDCFD1;
+	}
+div.sacramentalLife {
+	background-image: linear-gradient(to right,red ,#FF8A00);
+	}
+div.familyLife {
+	background-image: linear-gradient(to right,#00499C ,#66B5FF);
+	}
+div.personalLife {
+	background-image: linear-gradient(to right, #FF8600,#FFE900);
+	}
+div.publicLife {
+	background-image: linear-gradient(to right,#049D00, #73D837);
+	}
+section.prayers nav.prayerTypes {
+	box-shadow: 2px 2px 0.3px 0.3px #585858;
+	}
+nav.prayerTypes div {
+	color: #CDCFD1;
+	}
+article.prayerBox {
+	box-shadow: 2px 2px 3px 2px #585858;
+	}
+.prayerOptionIcon {
+	color: #969696;
+	}
+h3.prayerHeading {
+	border-bottom: 3px ridge #808080;
+	color: #CDCFD1;
+	}
+article.prayerText {
+	border: 0.5px solid #585858;
+	}
+div.howWasTheDayHeader {
+	box-shadow: 2px 2px 0.3px 0.3px #585858;
+	}
+div.todayDate {
+	color: grey;
+	}
+div.todaysMoodEmoji {
+	background-color: #101D24;
+	border: 4px double #9A9A9A;
+	}
+.todaysMoodEmojiIcon {
+	color: #9A9A9A;
+	}
+h3.howWasTheDayHeading,h3.theDeveloperHeading,div.theDeveloperQuote,small.designer {
+	color: #CDCFD1;
+	}
+.howWasTheDayIcon1 {
+	color: #0089FF;
+	}
+.howWasTheDayIcon2 {
+	top: 5px;
+	font-size: 0.65em;
+	color: #A0A0A0;
+	}
+hr.continuumLinePresent {
+	background-color: #14A60A;
+	}
+hr.continuumLineFuture {
+	background-color: #A4A4A4;
+	}
+div.moodOfDayCircle {
+	border-width: 2px;
+	border-style: solid;
+	}
+div.moodCircle4 {
+	border-color: #909090 !important;
+	}
+div.isMoodExpressed {
+	border-width: 2px;
+	border-style: solid;
+	}
+.chooseMoodIcon {
+	color: #FFB700;
+	}
+div.describeThisDay {
+	background-image: linear-gradient(to right,#036A00, #59A62A);
+	}
+.describeThisDayIcon {
+	color: #22A100;
+	}
+.thisDayIcon {
+	color: #0062B3;
+	}
+textarea.describeThisDayTextarea {
+	background-color: rgba(25,25,25,0.3);
+	color: #DDDDDD;
+	border-color: #2D3D48;
+	}
+textarea.describeThisDayTextarea:focus {
+	border: 1px solid #00902F;
+	}
+.includeEmojiContentIcon,.includeImageContentIcon,.sendContentIcon {
+	color: #CDCFD1;
+	}
+.closeContentIcon {
+	color: #5A5A5A;
+	border-radius: 50%;
+	border: 1px solid #101D24;
+	background-color: #CDCFD1;
+	}
+div.sendContent {
+	background-color: #5A5A5A;
+	}
+div.theDeveloperHeader {
+	box-shadow: 2px 2px 0.3px 0.3px #585858;
+	}
+div.theDeveloperInfo {
+	border-width: 1px;
+	border-style: solid;
+	}
+div.expandDevName {
+	opacity: 0.95;
+	background-color: #222D36;
+	box-shadow: 2px 2px 2px 2px #222D36;
+	}
+span.theDeveloperAbbr {
+	text-shadow: 0px 0px 5px #8B8B8B;
+	}
+div.theDeveloperMail {
+	border: 2px solid #0089FF;
+	opacity: 0.5;
+	}
+.mediaItem1,.mediaItem2,.mediaItem3,.mediaItem4 {
+	color: #EEE;
+	}
+span.mediaItem1Label:active,.mediaItem2Label:active,.mediaItem3Label:active,.mediaItem4Label:active {
+	color: white;
+	}
+div.theDeveloperFollowSocialMedias div,div.moreMedia {
+	box-shadow: 0px 1px 2px 2px #33333F;
+	}
+div.moreMedia {
+	background-color: silver;
+	}
+div.fancyOptions {
+	border: 1px solid #585858;
+	}
+div.fancyItem {
+	box-shadow: 2px 2px 3px 1.5px #57A5DD;
+	background-color: #0089FF;
+	}
+div.toggleFancyOptions-passive {
+	box-shadow: 0px 0px 5px 1.5px #585858;
+	}
+.tooltip {
+	background-color: #C0C0C0;
+	box-shadow: 2px 2px 5px 1px #585858;
+	color: #222D36 !important;
+	opacity: 0.8;
+	}
+.tooltipTriangle {
+	opacity: 0.8;
+	}
+.tooltipTriangle polygon {
+	fill: #C0C0C0;
+	stroke: #C0C0C0;
+	}
+dialog.dialogBox {
+	background-color: rgba(55,55,65,0.85);
+	}
+div.dialogContent {
+	border-width: 1px;
+	border-style: solid;
+	}
+span.dialogText {
+	color: #CDCFD1;
+	}
+span.dialogText a {
+	color: #005DFF;
+	}
+span.dialogText strong,span.dialogText h3 {
+	color: #CDCFD1 !important;
+	}
+dot {
+	box-shadow: 0px 0px 1px 1px #585858;
+	background-color: rgba(255,255,255,0.8);
+	}
+.closeSearchFieldIcon {
+	color: #FAFAFA;
+	}
+nav.top,div.messageBox,section.phrase-box,div.mySpiritualLifeHeader,section.mySpiritualLife,section.prayers nav.prayerTypes,article.prayerBox,div.prayerOption,div.howWasTheDayHeader,section.howWasTheDay,div.theDeveloperHeader,div.theDeveloperInfo,div.theDeveloperMail,div.fancyOptions,div.toggleFancyOptions {
+	background-color: #101D24;
+	}
+nav.top,section.mySpiritualLife {
+	box-shadow: 2px 2px 1px 1px #585858;
+	}
+h1,h2,h3,h4,h5,h6,nav.top > button,nav.top > h3 {
+	color: #CDCFD1;
+	}
+div.menuContent ul,.dialogBoxClose,span.dialogHeading {
+	color: #CDCFD1;
+	}
+div.menuContent ul li span,div.theDeveloperInfo,div.dialogContent {
+	border-color: #222D36;
+	}
+.messageIcon,div.dashboardOptions {
+	color: lightgrey;
+	}
+aside.sidebar,div.greetings,section.howWasTheDay {
+	box-shadow: 2px 2px 2px 2px #585858;
+	}
+div.dashboardHeading,div.userInfo label,input.userDataField,span.userStarredCount,h3.greetWord,h2.name,div.circle,div.sacramentalLife,div.familyLife,div.personalLife,div.publicLife,span.describeThisDayLabel,.sendContentIcon,.tooltip {
+	color: #CDCFD1;
+	}
+span.theDeveloperAbbr {
+	color: #101D24;
+	}
+div.userImage {
+	border: 2.5px solid #273A49;
+	}
+div.theDeveloperImage {
+	border: 2px solid #101D24;
+	}
+div.userImage,div.theDeveloperImage {
+	background-color: #384853;
+	}
+input.userDataField,.tooltipTriangle {
+	background-color: transparent;
+	}
+div.userInfo button:active,.fancyItemIcon {
+	color: #EEE;
+	}
+div.userInfo button:active,span.userStarredCount {
+	background-color: #01B66E;
+	}
+div.prayerOptions,div.prayerOption {
+	border: 1px solid #969696;
+	}
+div.thisDay {
+	background-color: #CDCFD1;
+	}
+div.contentSection1 {
+	background-color: #5A5A5A;
+	}
+div.moodOfDayCircle,div.isMoodExpressed {
+	border-color: #14A60A;
+	background-color: #384853;
+	}
+div.describeThisDayIconCircle {
+	background-color: #384853;
+	}
+.moodExpDone,.prayerOptionsIcon,.prayerOptionIconActive {
+	color: #4CA000;
+	}
+div.expandDevName span {
+	color: #E0E0E0;
+	}
+span.thisDayLabel {
+	color: #585858;
+	}
+span.moreMediaIcon svg #dots {
+	fill: #585858;
+	}
+dialog::backdrop {
+	background-color: ghostwhite;
+	}
+section.theDeveloper,footer {
+	background-color: #384853;
+	}
+div.dialogContent {
+	background-color: #222D36;
+	}
+div.fancyItem:first-of-type, div.fancyItem:nth-of-type(4) {
+	background-color: #C4C4C4;
+	box-shadow: 2px 2px 3px 1.5px #585858;
+	}
+.mySpiritualLifeIcon,.toggle-toggleFancyOptionsIcon,.theDeveloperIcon,.theDeveloperMailIcon,.creativeCommonsIcon {
+	color: #0089FF;
+	}
+button.disableLoaderClick {
+	background-color: #222D36 !important;
+	}
+span.sacramentalLifeHeading,.familyLifeHeading,.personalLifeHeading,.publicLifeHeading {
+	color: ghostwhite;
+	}
+div.prayer {
+	color: #969696;
+	padding-bottom: 0px;
+	border-bottom: none;
+	}
+div.prayerTypeActive {
+	color: #BD2EDA !important;
+	padding-bottom: 9px;
+	border-bottom: 2px solid #BD2EDA;/*#BD2EDA #384853*/
+	}
+a.goToGodBlessLink {
+	color: #CDCFD1;
+	}
+div.helpTranslateHandIconContainer {
+	border: 1.5px solid #6C6C6C;
+	}
+strong.helpTranslateSubHeading {
+	color: #CDCFD1;
+	}
+div.spritualLandingBox {
+	background-color: #101D24;
+	border: 2px solid grey;
+	}
+button.goBackHome {
+	background-color: #0E1D22;
+	border: 1px solid #222D36;
+	}
+button.goBackHome:hover {
+	border: none;
+	}
+.prayerOptionsIconActive {
+	color: #222D36;
+	}
+div.prayerOptionsActiveOutline {
+	outline: 1.5px #14A60A solid;
+	border: 1px solid #222D36;
+	background-color: #2A9522;
+	}
+article.prayerTextShrink {
+	left: 80px;
+	width: 60.25vw;
+	}
+div.fancyOptionActive {
+	background-color: #0089FF !important;
+	box-shadow: 2px 2px 3px 1.5px #57A5DD !important;
+	}
+div.toggleFancyOptions-active {
+	border: 1px solid #585858;
+	}
+div.todaysMemoryImage {
+	border: 1px solid #585858;
+	background-color: #6C6C6C;
+	}
+div.todaysMemoryAddImage {
+	background-color: #585858;
+	}
+div.todaysMemoryImage.addImage {
+	background-color: #585858;
+	}
+.todaysMemoryAddImageIcon {
+	color: #101D24;
+	border: 1px solid #101D24;
+	}
+img.nightModeActiveLoader {
+	animation: spin 1.5s linear infinite;
+	}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+	}
+div.dashboardOptions:active {
+	background-color: #162831;
+	}
+h4.translatePagesHeading {
+	background-color: #222D36;
+	box-shadow: 2px 2px 2px 2px #33333F;
+	}
+/*New*/
+svg.dashboardSvg #dashRect1 {
+	fill: #384853;
+	stroke: none;
+	}
+svg #dashCirc1 {
+	fill: #101D24;
+	}
+svg #dashLine1, #dashLine2 {
+	stroke: #101D24;
+	}
+svg #dashRect2, #dashRect3 {
+	fill: #222D36;
+	stroke: none;
+	}
+svg.homeSvg #homeRect1, #homeRect2, #homeCirc1 {
+	fill: #384853;/*lightgrey*/
+	}
+svg #homeRect3 {
+	fill: #101D24;
+	}
+svg #homeRect4 {
+	fill: #101D24;
+	}
+svg #homeLine1, #homeLine2 {
+	stroke: #222D36;/*ECECEC*/
+	}
+svg #homeLine3, #homeLine4 {
+	stroke: #384853;
+	}
+svg.collapseSubpagesSvg {
+	background-color: #101D24;
+	}
+svg #colSubPoly1, #colSubPoly2 {
+	stroke: #384853;
+	}
+svg #colSubPoly1 {
+	fill: #222D36;
+	}
+svg #colSubPoly2 {
+	fill: #384853;
+	}
+svg #colSubText1 {
+	fill: #9F9F9F;
+	}
+div.subPage {
+	background-color: #222D36;
+	}
+svg.subpagesSvg .subRect1, .subRect2 {
+	fill: #384853;
+	}
+svg .subRect3, .subRect4 {
+	fill: #101D24;
+	}
+svg .subLine1, .subLine2, .subLine3 {
+	stroke: #222D36;
+	}
+svg .subText1 {
+	fill: #9B9B9B;
+	}
+small.subPagesExpandedHeading {
+	color: silver;
+	background-color: #222D36;
+	}
+hr.decorSubPagesExpandedHeading {
+	border-color: silver;
+	}

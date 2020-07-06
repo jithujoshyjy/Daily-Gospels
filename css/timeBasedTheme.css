@@ -1,0 +1,34 @@
+div.greetings-day {
+	background-image: url('../img/Day/day1.png');
+	}
+div.greetings-night {
+	background-image: url('../img/Night/night18.png');
+	}
+body.mainTheme-day {
+	background-image: linear-gradient(to bottom,#FFE6A4 1%, ghostwhite 99%);
+	}
+body.mainTheme-night {
+	background-image: linear-gradient(to bottom,#ACA4FF 1%, ghostwhite 99%);
+	}
+.mySpiritualLifeIcon-day,
+.toggleFancyOptionsIcon-day,
+.howWasTheDayIcon1-day,
+.theDeveloperIcon-day,
+.theDeveloperMailIcon-day,
+.creativeCommonsIcon-day {
+	color: #FF8C26;
+	}
+.mySpiritualLifeIcon-night,
+.toggleFancyOptionsIcon-night,
+.howWasTheDayIcon1-night,
+.theDeveloperIcon-night,
+.theDeveloperMailIcon-night,
+.creativeCommonsIcon-night {
+	color: #6152FF;
+	}
+div.theDeveloperMail-day {
+	border: 2px solid #FF7700;
+	}
+div.theDeveloperMail-night {
+	border: 2px solid #6152FF;
+	}

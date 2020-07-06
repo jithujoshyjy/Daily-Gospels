@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8"/>
+<meta name="application-
+name" content="Daily Gospels"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<meta name="theme-color"
+content="#EEE"/>
+
+<title>Daily Gospels</title>
+
+</head>
+<body class="mainTheme">
+	
+<!---- Page load time Animation --->
+<div class="startTimeBanner" style="width: 100vw; height: 100vh; border: px solid red; background-color: ghostwhite; position: fixed; z-index: 100;">
+
+<hgroup style="position: relative; top: 20vh; border: px solid red; min-height: 100px;">
+
+<h1 style="font-family: sans-serif; font-weight: 500; letter-spacing: -1px; text-align: center; color: #217AFF; animation: popIntoView 500ms ease-out 1;font-size: 2.7em;font-variant: small-caps;">
+	daily gospels
+</h1>
+
+<h4 id="bannerSubHead" style="color: grey; width: 100%; position: relative; top: -31px; text-align: center; display: none;">
+	Let's Spread the Word of God
+</h4>
+<script>
+setTimeout(function() {
+	document.getElementById('bannerSubHead').style.display = 'block';
+	}, 500);
+</script>
+</hgroup>
+<div style="min-width: 45px; height: auto; border: px solid red; margin: 0px; position: relative; top: 150px; left: 40vw; left: calc((100vw - 65px)/2);">
+
+<div style="width: 10px; height: 10px; border: 1px solid #217AFF; display: inline-block; border-radius: 25px; margin: 0px 0 0 5px;animation: loadingCircleOne 2s linear infinite 0s;"></div>
+
+<div style="width: 10px; height: 10px; border: 1px solid #217AFF; display: inline-block; border-radius: 25px; margin: 0px 0 0 5px; animation: loadingCircleTwo 2s linear infinite 500ms;"></div>
+
+<div style="width: 10px; height: 10px; border: 1px solid #217AFF; display: inline-block; border-radius: 25px; margin: 0px; margin: 0px 0 0 5px; animation: loadingCircleThree 2s linear infinite 1s;"></div>
+</div>
+
+<style>
+@keyframes popIntoView {
+	0% {
+		font-size: 0.5em;
+		}
+	100% {
+		font-size: 2.7em;
+		}
+	}
+@keyframes loadingCircleOne {
+	0% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	30% {
+		background-color: #2198FF;
+		border: 1px solid #A0C8FF;
+		}
+	50% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	100% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	}
+@keyframes loadingCircleTwo {
+	0% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	30% {
+		background-color: #2198FF;
+		border: 1px solid #A0C8FF;
+		}
+	50% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	100% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	}
+@keyframes loadingCircleThree {
+	0% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	30% {
+		background-color: #2198FF;
+		border: 1px solid #A0C8FF;
+		}
+	50% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	100% {
+		background-color: transparent;
+		border: 1px solid #217AFF;
+		}
+	}
+</style>
+</div>
+<!---------- Prefetch Resources -------->
+<link class="darkTheme" rel="prefetch" as="style" type="text/css" href="css/darkTheme.css"/>
+<link rel="prefetch" as="image" type="image/png" href="img/Day/day1.png"/>
+<link rel="prefetch" as="image" type="image/png" href="img/Night/night18.png"/>
+<link rel="prefetch" as="image" type="image/png" href="img/Night/night4.png"/>
+
+<!------------------ Jquery ---------------------->
+<script src="js/jquery.min.js">
+</script>
+
+<!---------------- Stylesheets --------------->
+<link rel="stylesheet" href="css/all.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/index-style.css" type="text/css"/>
+<link class="timeBasedTheme" rel="stylesheet" href="css/timeBasedTheme.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="css/mySpiritualLife.css" />
+<link class="lightTheme" rel="stylesheet" type="text/css" href="css/lightTheme.css"/>
+<header>
+	<nav class="top passive">
+		<h3>Daily Gospels</h3>
+		<button class="toggle-menu">—<br/>—<br/>—</button>
+		<div class="menu">
+			<div class="menuContent">
+				<ul>
+					<li class="about">
+						<span>
+							About
+						</span>
+					</li>
+					<li class="dashboardToggle">
+					<span>
+						Dashboard
+					</span>
+					</li>
+					<li class="languages">
+						<span>
+							Languages
+						</span>
+					</li>
+					<li class="helpTranslate">
+						<span>
+							Help Translate
+						</span>
+					</li>
+					<li class="cprightNprivacy">
+						<span>
+							Privacy and Copyright
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="messageBox">
+				<span class="message">
+				</span>
+				<span class="messageIcon fa fa-times">
+				</span>
+			</div>
+		</div>
+	</nav>
+</header>
+<aside class="sidebar">
+	<div class="dashboardHeading">
+		<span class="dashboardHeadingText">
+			Dashboard
+		</span>
+	</div>
+	<div class="userImage">
+		<span class="userImageIcon fa fa-user">
+		</span>
+	</div>
+	<div class="userInfoSlot">
+		<div class="userNameSlot">Your name</div>
+		<div class="userEmailSlot">
+			<span class="userEmailAtSign">@</span><span class="userEmailText">Your mail id</span>
+		</div>
+	</div>
+	<div class="userInfo">
+		<div class="userName">
+			<form class="fillUserInfo" action="javascript: void 0">
+				<label>
+					<span class="userNameLabel label1">
+						Name:
+					</span>
+					<input class="userDataField userNameField" type="text"/>
+				<br/>
+				</label>
+				<label> 
+					<span class="userEmailLabel label2">
+						Email:
+					</span>
+					<input class="userDataField userEmailField" type="email" placeholder="(optional)"/>
+				</label>
+				<span class="userEnqueryIcon fa fa-question-circle" data-tooltip="help" data-tooltip-position="bottom">
+				</span>
+				<button class="userDataSubmit">
+					submit
+				</button>
+			</form>
+		</div>
+	</div>
+	<hr class="userDataEndLine"/>
+	<div class="dashboardOptionsBox">
+		<div class="dashboardOptions userProfile">
+			<span class="userProfileIcon fa fa-user">
+			</span>
+				Profile
+		</div>
+		<div class="dashboardOptions userActivity">
+			<span class="userActivityIcon fa fa-poll-h">
+			</span>
+				Activities
+		</div>
+		<div class="dashboardOptions userStarred">
+			<span class="userStarredIcon fa fa-star">
+			</span>
+				Starred
+			<span class="userStarredCount">
+			<span class="userStarredCountNumber">0</span>
+		</span>
+		</div>
+		<div class="dashboardOptions userDescriptions">
+			<span class="userDescriptionsIcon fa fa-pager">
+			</span>
+			<span>
+				Descriptions
+			</span>
+		</div>
+		<div class="dashboardOptions userSuper">
+			<span class="userSuperIcon fa fa-user-secret">
+			</span>
+				SuperUser
+		</div>
+	</div>
+</aside>
+<main role="main">
+	<div class="greetings">
+		<h3 class="greetWord">Good Morning</h3>
+		<h2 class="name">Name</h2>
+		<div class="whatsGreeting">
+			<span class="whatsGreetingIcon fa fa-question-circle" data-tooltip="help" data-tooltip-position="bottom"></span>
+		</div>
+	</div>
+	<section class="phrase-box">
+		<div class="circle">
+			<div class="circle-abbr">
+			&lt;/&gt;
+			</div>
+		</div>
+		<div class="thePhrase">
+		Placeholder
+		</div>
+		<hr class="phraseEndLine"/>
+		<div class="getAnotherPhrase">
+		Get Another Phrase
+		</div>
+	</section>
+	<div class="mySpiritualLifeHeader">
+		<span class="mySpiritualLifeIcon fa fa-church">
+		</span>
+		<h3 class="mySpiritualLifeHeading">		My spiritual life
+		<!--എന്റെ ആത്മീയ ജീവിതം-->
+		</h3>
+	</div>
+	<section class="mySpiritualLife">
+		<div class="sacramentalLife">
+			<span class="sacramentalLifeIcon fa fa-dove">
+			</span>
+			<span class="sacramentalLifeHeading">
+			കൗദാശിക ജീവിതം
+			</span>
+		</div>
+		<div class="familyLife">
+			<span class="familyLifeIcon fa fa-home">
+			</span>
+			<span class="familyLifeHeading">
+<span>കുടുംബ</span> ജീവിതം
+			</span>
+		</div>
+		<div class="personalLife">
+			<span class="personalLifeIcon fa fa-user">
+			</span>
+			<span class="personalLifeHeading">
+<span>സ്വകാര്യ</span> ജീവിതം
+			</span>
+		</div>
+		<div class="publicLife">
+			<span class="publicLifeIcon fa fa-users">
+			</span>
+			<span class="publicLifeHeading">
+<span>സാമൂഹിക</span> ജീവിതം
+			</span>
+		</div>
+	</section>
+	
+	<section class="prayers">
+		<nav class="prayerTypes">
+			<div class="prayer prayer1 prayerTypeActive">
+				Prayer1
+			</div>
+			<div class="prayer prayer2">
+				Prayer2
+			</div>
+			<div class="prayer prayer3">
+				Prayer3
+			</div>
+		</nav>
+		<article class="prayerBox">
+			<div class="prayerOptions">
+				<span class="prayerOptionsIcon fa fa-scroll">
+				</span>
+			</div>
+			<div class="prayerOptionsSelect">
+				<div class="prayerOption prayerOption1">
+					<span class="prayerOptionIcon prayerOptionIcon1 prayerOptionIconActive fa fa-user">
+					</span>
+				</div>
+				<span class="prayerOptionLabel1 prayerOptionLabel">Saints</span>
+				<div  class="prayerOption prayerOption2">
+					<span class="prayerOptionIcon prayerOptionIcon2 fa fa-">
+					</span>
+				</div>
+				<span class="prayerOptionLabel2 prayerOptionLabel">
+						Angels
+					</span>
+				<div  class="prayerOption prayerOption3">
+					<span class="prayerOptionIcon prayerOptionIcon3 fa fa-">
+					</span>
+				</div>
+				<div  class="prayerOption prayerOption4">
+					<span class="prayerOptionIcon prayerOptionIcon4 fa fa-">
+					</span>
+				</div>
+				<div  class="prayerOption prayerOption5">
+					<span class="prayerOptionIcon prayerOptionIcon5 fa fa-">
+					</span>
+				</div>
+			</div>
+			<h3 class="prayerHeading">
+				Prayer Heading
+			</h3>
+			<article class="prayerText">
+			</article>
+		</article>
+	</section>
+	
+	<div class="howWasTheDayHeader">
+		<span class="howWasTheDayIcon">
+			<span class="howWasTheDayIcon1 fa fa-mountain">
+			</span>
+			<span class="howWasTheDayIcon2 fa fa-sun">
+			</span>
+		</span>
+		<h3 class="howWasTheDayHeading">
+			How was your day?
+		</h3>
+	</div>
+	<section class="howWasTheDay">
+		<div class="todayDate">
+		</div>
+		<div class="todaysMoodEmoji">
+			<span class="todaysMoodEmojiIcon fa fa-dice-d6">
+			</span>
+		</div>
+		<div class="howWasTheMoodOfDayBox">
+			<hr class="continuumLinePresent"/>
+			<hr class="continuumLineFuture"/>
+			<div class="moodOfDayCircle moodCircle1">
+				<div class="isMoodExpressed moodExp1">
+					<!--span class="moodExpDone fa fa-check">
+					</span-->
+				</div>
+			</div>
+			<div class="moodOfDayCircle moodCircle2">
+				<div class="isMoodExpressed moodExp2">
+					<span class="moodExpDone fa fa-check">
+					</span>
+				</div>
+			</div>
+			<div class="moodOfDayCircle moodCircle3 today">
+				<div class="choosedMood">
+					<span class="chooseMoodIcon fa fa-diagnoses">
+					</span>
+				</div>
+			</div>
+			<div class="moodOfDayCircle moodCircle4">
+			</div>
+		</div>
+		<div class="describeThisDayInput">
+		</div>
+		<div class="describeThisDay">
+			<div class="describeThisDayIconCircle">
+				<span class="describeThisDayIcon fa fa-pencil-alt"></span>
+			</div>
+			<span class="describeThisDayLabel">
+				Describe this day....
+			</span>
+		</div>
+		<div class="thisDay">
+			<span class="thisDayIcon fa fa-calendar-day">
+			</span>
+			<span class="thisDayLabel">Today</span>
+		</div>
+	</section>
+	
+	<div class="theDeveloperHeader">
+		<span class="theDeveloperIcon fa fa-code">
+		</span>
+		<h3 class="theDeveloperHeading">
+			About The Developer
+		</h3>
+	</div>
+	<section class="theDeveloper">
+		<div class="theDeveloperInfo">
+			<div class="theDeveloperImage">
+				<div class="expandDevName">
+					<span class="firstLetter">J</span>
+					<span class="middleLetters"></span>
+					<span class="lastLetter">Y</span>
+				</div>
+				<span class="theDeveloperAbbr">JY</span>
+</div>
+			<div class="theDeveloperDetails">
+				<div class="theDeveloperQuote">
+					<span>“</span>
+					<span>
+					My belief is my truth...
+					</span>
+				</div>
+				<div class="theDeveloperMail">
+					<span data-tooltip="mail me!!" data-tooltip-position="bottom">
+						<span class="theDeveloperMailIcon fa fa-envelope">
+					</span>
+				</span>
+				</div>
+			</div>
+		</div>
+		<aside class="theDeveloperFollow">
+			<div class="theDeveloperFollowSocialMedias">
+				<a href="https://m.facebook.com">
+				<div class="mediaItem1Container">
+					<span class="mediaItem1 fab fa-facebook-square">
+					</span>
+					<span class="mediaItem1Label">
+						Facebook
+					</span>
+				</div>
+				</a>
+				<a href="https://m.gooogleplus.com">
+				<div class="mediaItem2Container">
+					<span class="mediaItem2 fab fa-google-plus-square">
+					</span>
+					<span class="mediaItem2Label">
+						Google+
+					</span>
+				</div>
+				</a>
+				<a href="https://m.twitter.com">
+				<div class="mediaItem3Container">
+					<span class="mediaItem3 fab fa-twitter-square">
+					</span>
+					<span class="mediaItem3Label">
+						Twitter
+					</span>
+				</div>
+				</a>
+				<a href="https://m.github.com">
+				<div class="mediaItem4Container">
+					<span class="mediaItem4 fab fa-github-square">
+					</span>
+					<span class="mediaItem4Label">
+						Github
+					</span>
+				</div>
+				</a>
+			</div>
+			<div class="moreMedia">
+				<span class="moreMediaIcon">
+					<svg width="30" height="25" style="border: px solid red; margin-top: 2px;">
+		<g id="dots" stroke="none">
+		<circle cx="5" cy="13.5" r="3.2"/>
+		<circle cx="15" cy="13.5" r="3.2"/>
+		<circle cx="25" cy="13.5" r="3.2"/>
+		</g>
+</svg>
+				</span>
+			</div>
+			<style class="mediaSetCss">
+			</style>
+		</aside>
+	</section>
+	<footer>
+		<span class="footerText">
+			<span data-tooltip="creative commons" data-tooltip-position="top">
+				<span class="creativeCommonsIcon fa fa-closed-captioning">
+				</span>
+			</span>
+			<small class="designer">
+		   Designed by Jithu Joshy Jy
+			</small>
+		</span>
+	</footer>
+	<div class="fancyOptions">
+		<div class="fancyItems">
+			<div class="fancyItem watermark">
+				<span class="fancyItemIcon fa fa-circle-notch" data-tooltip="watermark" data-tooltip-position="top"></span>
+			</div>
+			<div class="fancyItem textSize">
+				<span class="fancyItemIcon textSizeIcon fa fa-text-height" data-tooltip="text size" data-tooltip-position="top"></span>
+				<input class="textSizeRange" type="range" min="14" max="18" value="16"/>
+				<small class="currentFontSize">16px</small>
+			</div>
+			<div class="fancyItem">
+				<span class="fancyItemIcon fa fa-adjust" data-tooltip="adjust brightness" data-tooltip-position="top"></span>
+			</div>
+			<div class="fancyItem nightMode">
+				<span class="fancyItemIcon fa fa-cloud-moon" data-tooltip="night mode" data-tooltip-position="top"></span>
+			</div>
+			<div class="fancyItem search">
+				<span class="fancyItemIcon searchIcon fa fa-search" data-tooltip="search" data-tooltip-position="top"></span>
+			</div>
+			<div class="fancyItem">
+				<span class="fancyItemIcon fa fa-list" data-tooltip="glossary" data-tooltip-position="top"></span>
+			</div>
+		</div>
+	</div>
+	<div class="toggleFancyOptions toggleFancyOptions-passive">
+		<span class="toggle-toggleFancyOptionsIcon fa fa-sliders-h">
+		</span>
+	</div>
+</main>
+<template class="describeThisDayFields">
+<div class="describeThisDayFieldsContainer">
+	<form class="describeThisDayForm" action="javascript: void 0">
+		<textarea class='describeThisDayTextarea placeholderAlign'
+rows='5' cols='25' placeholder='
+
+
+Type Here'></textarea>
+	</form>
+<div class='contents'>
+	<div class="contentSection1">
+		<div class="contentActivators">
+			<div class='includeEmojiContent'>
+				<span class="fa fa-grin-alt includeEmojiContentIcon">
+				</span>
+			</div>
+			<div class='includeImageContent'>
+				<span class="fa fa-camera includeImageContentIcon">
+				</span>
+			</div>
+		</div>
+		<div class="containSmilies">
+			<script>
+				$("div.containSmilies").html(smileyList);
+			</script>
+		</div>
+	</div>
+	<div class="contentSection2">
+		<div class='sendContent'>
+			<span class='fa fa-paper-plane sendContentIcon'>
+			</span>
+		</div>
+		<div class='closeContent'>
+			<span class='fa fa-times-circle closeContentIcon'>
+			</span>
+		</div>
+	</div>
+</div>
+<div class="todaysMemories">
+	<h5>Today's <wbr/>Moments</h5>
+	<div class="todaysMemoriesImages">
+		<!--div class="todaysMemoryImage">
+		</div-->
+		<div class="todaysMemoryImage addImage">
+			<div class="todaysMemoryAddImage">
+				<span class="todaysMemoryAddImageIcon fa fa-plus-circle">
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+describeThisDayMethods();
+</script>
+</div>
+</template>
+
+<template class="setProfileImage">
+<div class="profileType">
+	<div class="profileBlock profileMan">
+		<span class="profileTypeIcon fa fa-user">
+		</span>
+	</div>
+	<span class="profileHeading profileManHeading">
+		Man
+	</span>
+</div>
+<div class="profileType">
+	<div class="profileBlock profileWoman">
+		<span class="profileTypeIcon fa fa-user">
+		</span>
+	</div>
+	<span class="profileHeading profileWomanHeading">
+		Woman
+	</span>
+</div>
+<div class="profileType">
+	<div class="profileBlock profileAnimal">
+		<span class="profileTypeIcon fa fa-paw">
+		</span>
+	</div>
+	<span class="profileHeading profileAnimalHeading">
+		Animals
+	</span>
+</div>
+<div class="profileIcons">
+</div>
+<script>
+loadProfileIcons();
+</script>
+</template>
+
+<template class="helpTranslateHeader">
+Help Translate<br/>
+<a  class="goToGodBlessLink" href="#commitYourWork">
+<div class="helpTranslateHandIconContainer">
+<i class='fa fa-hands'></i>
+</div>
+</a>
+</template>
+<template class="helpTranslateText">
+<article class="helpTranslateArticle">
+	<strong class="helpTranslateSubHeading">
+Hello, can you help translate this app ?
+	</strong>
+	<p>
+I want to make this app available to everyone. To do that, I want the support of people who can translate this app to other languages. If you are willing to take this task and spread the word of God, please submit your work below.
+	</p>
+	<p>
+If you aren't familiar with other languages, you can also help me improve this app by correcting mistakes in translations or reporting issues or bugs within the application.
+I also appreciate any suggestions or feedbacks from yourself.<br/>
+		<span id="godBless">
+			God bless you!!
+		</span>
+	</p>
+	<h4 class="translatePagesHeading" id="commitYourWork">
+		Commit your work below👇
+	</h4>
+	<section class="translatePages">
+		<div class="translatePagesContainer">
+		<div class="translatePagesContainer2">
+			<div class="pageToTranslate">
+				<div class="dashboardTranslate">
+					<svg class="dashboardSvg" width="100%" height="100%">
+						<rect id="dashRect1" x="0" y="0" width="50%" height="100%"/>
+						<circle id="dashCirc1" cx="25%" cy="20%" r="15%"/>
+						<line id="dashLine1" x1="5%" y1="42%" x2="45%" y2="42%"/>
+						<line id="dashLine2" x1="5%" y1="52%" x2="45%" y2="52%"/>
+						<rect id="dashRect2" x="5%" y="60%" width="8%" height="8%"/>
+						<rect id="dashRect3" x="5%" y="75%" width="8%" height="8%"/>
+					</svg>
+				</div>
+				<h5>
+					Dashboard
+				</h5>
+			</div>
+			<div class="pageToTranslate">
+				<div class="mainPageTranslate">
+					<svg width="100%" height="100%" class="homeSvg">
+						<rect id="homeRect1" x="5%" y="5%" width="90%" height="10%"/>
+						<rect id="homeRect2" x="10%" y="25%" width="80%" height="30%"/>
+						<rect id="homeRect3"x="18%" y="30%" width="15%" height="10%"/>
+						<line id="homeLine1" x1="40%" y1="40%" x2="80%" y2="40%"/>
+						<line id="homeLine2" x1="20%" y1="50%" x2="80%" y2="50%"/>
+						<rect id="homeRect4" x="10%" y="60%" width="80%" height="20%"/>
+						<circle id="homeCirc1" cx="23%" cy="70%" r="8%"/>
+						<line id="homeLine3" x1="40%" y1="70%" x2="80%" y2="70%"/>
+						<line id="homeLine4" x1="60%" y1="75%" x2="80%" y2="75%"/>
+					</svg>
+				</div>
+				<h5>
+					Home
+				</h5>
+			</div>
+			<div class="pageToTranslate subPagesToTranslate">
+				<div class="subPagesTranslate">
+					<div class="subPage subPage1">
+					</div>
+					<div class="subPage subPage2">
+					</div>
+					<div class="subPage subPage3">
+					</div>
+					<div class="subPage subPage4">
+					</div>
+					<div class="subPage subPagesCollapse">
+						<svg class="collapseSubpagesSvg" width="100%" height="100%">
+						<polygon id="colSubPoly1" points="20,2.5 57.5,2.5 57.5,77 2.5,77 2.5,20" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+						<polygon id="colSubPoly2" points="2.5,20 20,20 20,2.5 2.5,20" stroke-linejoin="round" stroke-linecap="round"/>
+						<text id="colSubText1" x="12%" y="60%" font-size="15" font-weight="bold">
+							cancel
+						</text>
+						</svg>
+					</div>
+				</div>
+				<h5 class="subPagesHeading">
+					Sub Pages
+				</h5>
+			</div>
+		</div>
+		</div>
+		<span class="subPagesExpandedHeader">
+			<hr class="decorSubPagesExpandedHeading"/>
+				<small class="subPagesExpandedHeading">
+			Sub Pages
+			</small>
+		</span>
+	</section>
+</article>
+<script>
+subpagesSvgActivated();
+</script>
+</template>
+<template class="searchFacility">
+<div class="searchContents">
+			<input class="searchField" type="search" autofocus/>
+			<span class="fa fa-times-circle closeSearchFieldIcon" onclick="closeSearchContents();">
+</span>
+		</div>
+</template>
+
+<template class="languages">
+<span class="selectLanguage">
+	<form>
+	<label>മംഗ്ലീsh
+		<input class="manglish" name="language" type="radio"/>
+	</label><br/>
+	<label>English
+		<input class="english" name="language" type="radio"/><br/>
+	</label>
+	<label>മലയാളം
+		<input class="malayalam" name="language" type="radio"/>
+	</label>
+	</form>
+</span>
+<script>
+selectLanguagesMethods();
+</script>
+</template>
+
+<template class="theDeveloperMailGreeting">
+If you have any issues with this app or just want to drop a <em>Hi</em>, you can contact me at:-<br/>
+<a class='myMailIdLink' href='mailto: jithujoshyjy@gmail.com'>
+jithujoshyjy@gmail.com
+</a>
+<br/>
+Please feel free to contact me, Have Fun!!
+</template>
+
+<template class="translateSubPagesSvg">
+<svg class="subpagesSvg" width="100%" height="100%">
+	<rect class="subRect1" x="5%" y="5%" width="90%" height="10%"/>
+	<rect class="subRect2" x="10%" y="25%" width="80%" height="40%"/>
+	<rect class="subRect3" x="17%" y="30%" width="15%" height="10%"/>
+	<line class="subLine1" x1="37%" y1="35%" x2="80%" y2="35%" stroke-width="3"/>
+	<line class="subLine2" x1="37%" y1="40%" x2="70%" y2="40%"/>
+	<line class="subLine3" x1="45%" y1="57%" x2="55%" y2="57%" stroke-width="4"/>
+	<rect class="subRect4" x="10%" y="70%" width="80%" height="25%"/>
+	<text class="subText1" x="13.5%" y="87%" font-size="9">sub page <tspan>num</tspan> </text>
+</svg>
+</template>
+
+<section class="subSection">
+</section>
+
+<script src="js/copyrightAndPrivacyPolicy.js">
+</script>
+<script src="js/index-script.js">
+</script>
+<script src="js/all.min.js" type="text/javascript">
+</script>
+<script src="js/mySpiritualLife.js" type="text/javascript">
+</script>
+<script src="js/mediaSet.js" type="text/javascript">
+</script>
+<script src="js/smileySprites.js" type="text/javascript">
+</script>
+<script src="js/dailyPhrases.js" type="text/javascript">
+</script>
+</body>
+</html>
